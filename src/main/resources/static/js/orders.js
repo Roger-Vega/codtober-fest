@@ -6,7 +6,7 @@
  * with your service endpoint below
  * ****************************
  */
-fetch('json/orders.json')
+fetch('/viewOrders')
     .then(response => response.json())
     .then(orders => {
         let rows = orders.map(element => createOrderTemplate(element));

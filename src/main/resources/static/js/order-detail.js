@@ -11,7 +11,7 @@ let id = 1;
  * with your service endpoint below
  * ****************************
  */
-fetch(`json/order.json?id=${id}`)
+fetch(`/viewOrder?orderId=${id}`)
     .then(response => response.json())
     .then(order => {
         let template = createRowTemplate(order);
